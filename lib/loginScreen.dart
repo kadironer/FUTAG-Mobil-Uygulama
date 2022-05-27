@@ -74,7 +74,6 @@ class _loginScreenState extends State<loginScreen> {
                         color: Color(0xFF3D3D3F),
                         fontSize: 16,
                         fontFamily: "Metropolis",
-                        fontWeight: FontWeight.w600,
                     ),
                     ),
                     onPressed: (){
@@ -107,7 +106,6 @@ class _loginScreenState extends State<loginScreen> {
                         color: Color(0xFF3D3D3F),
                         fontSize: 16,
                         fontFamily: "Metropolis",
-                        fontWeight: FontWeight.w600,
                       ),
                     ),
                     onPressed: (){
