@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:futag/registerPage.dart';
 
 class mainLoginScreen extends StatefulWidget {
   const mainLoginScreen({Key? key}) : super(key: key);
@@ -17,7 +18,7 @@ class _mainLoginScreenState extends State<mainLoginScreen> {
             Center(
               child: Container(
                 child: Padding(
-                  padding:  EdgeInsets.only(top: 30.0,bottom: 18.0),
+                  padding:  EdgeInsets.only(top: 68.0,bottom: 18.0),
                   child: Text("Giriş Yap",
                     style:TextStyle(
                       fontSize: 30,
@@ -140,7 +141,7 @@ class _mainLoginScreenState extends State<mainLoginScreen> {
 
 
             Padding(
-              padding: EdgeInsets.only(top: 10.0,bottom: 10.0),
+              padding: EdgeInsets.only(top: 15.0,bottom: 45.0),
               child: Container(
                 child: TextButton(
                   child: Text("Şifreni mi unuttun ?",
@@ -164,7 +165,7 @@ class _mainLoginScreenState extends State<mainLoginScreen> {
 
 
             Padding(
-              padding:  EdgeInsets.only(top: 20.0),
+              padding:  EdgeInsets.only(top: 45.0),
               child: Container(
                 child: TextButton(
                   child: Text("Hesabınız yok mu? Kayıt Ol",
@@ -175,6 +176,7 @@ class _mainLoginScreenState extends State<mainLoginScreen> {
                   ),
                   ),
                   onPressed: (){
+                    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => registerPage()));
                   },
                 ),
               ),

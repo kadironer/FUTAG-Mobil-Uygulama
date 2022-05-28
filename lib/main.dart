@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:futag/loginScreen.dart';
+import 'package:futag/registerPage.dart';
 
 
 void main() {
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      home:  loginScreen(),
+      home:  registerPage(),
     );
   }
 }

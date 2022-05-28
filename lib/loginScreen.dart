@@ -20,7 +20,7 @@ class _loginScreenState extends State<loginScreen> {
                 child: Image.asset("images/loginTopShape.png"),
               ),
               Padding(
-                padding: EdgeInsets.only(top:15.0,bottom:15.0),
+                padding: EdgeInsets.only(top:25.0),
                 child: Container(
                   width: MediaQuery.of(context).size.width,
                   child: Center(
@@ -32,6 +32,25 @@ class _loginScreenState extends State<loginScreen> {
                           letterSpacing: 5.0,
                       ),
                       ),
+                  ),
+                ),
+              ),
+
+
+              Padding(
+                padding:  EdgeInsets.only(top: 27.0,left:10.0,right: 10.0,bottom: 41.0),
+                child: Container(
+                  child: Text("“Başarı, zaman içerisinde çok çalışmaya ve tutkuya "
+                      "bağlıdır. Eğer gerçekten çalışırsanız, uzun bir süre "
+                      "boyunca gerçekten çok çalışırsanız, karşılığını "
+                      "alacaksınız.” ",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 13,
+                      fontFamily: "Metropolis",
+                      fontWeight: FontWeight.w500,
+                      color: Color(0xFF7C7D7E)
+                    ),
                   ),
                 ),
               ),
@@ -60,7 +79,7 @@ class _loginScreenState extends State<loginScreen> {
                     ),
                     ),
                     onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) =>  mainLoginScreen()));
+                      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => mainLoginScreen()));
                     },
                   ),
                 ),
