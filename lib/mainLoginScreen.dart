@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:futag/forgotPasswordPage.dart';
 import 'package:futag/registerPage.dart';
 
 class mainLoginScreen extends StatefulWidget {
@@ -152,6 +153,7 @@ class _mainLoginScreenState extends State<mainLoginScreen> {
                     ),
                   ),
                   onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => forgotPasswordPage()));
                   },
                 ),
               ),

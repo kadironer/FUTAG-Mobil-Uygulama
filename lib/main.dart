@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:futag/registerPage.dart';
+import 'package:futag/loginScreen.dart';
+
+
 
 
 void main() {
@@ -12,9 +14,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'FÜTAG',
       debugShowCheckedModeBanner: false,
-      home:  registerPage(),
+      home:  loginScreen(),
     );
   }
 }

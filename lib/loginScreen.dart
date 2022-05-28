@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:futag/mainLoginScreen.dart';
+import 'package:futag/registerPage.dart';
 
 class loginScreen extends StatefulWidget {
   const loginScreen({Key? key}) : super(key: key);
@@ -41,8 +42,8 @@ class _loginScreenState extends State<loginScreen> {
                 padding:  EdgeInsets.only(top: 27.0,left:10.0,right: 10.0,bottom: 41.0),
                 child: Container(
                   child: Text("“Başarı, zaman içerisinde çok çalışmaya ve tutkuya "
-                      "bağlıdır. Eğer gerçekten çalışırsanız, uzun bir süre "
-                      "boyunca gerçekten çok çalışırsanız, karşılığını "
+                      "bağlıdır. Eğer gerçekten çalışırsanız, uzun bir süre \n"
+                      "boyunca gerçekten çok çalışırsanız, karşılığını\n"
                       "alacaksınız.” ",
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -79,7 +80,7 @@ class _loginScreenState extends State<loginScreen> {
                     ),
                     ),
                     onPressed: (){
-                      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => mainLoginScreen()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => mainLoginScreen()));
                     },
                   ),
                 ),
@@ -114,7 +115,7 @@ class _loginScreenState extends State<loginScreen> {
                       ),
                     ),
                     onPressed: (){
-
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => registerPage()));
                     },
                   ),
                 ),
