@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:futag/mainLoginScreen.dart';
 
 class loginScreen extends StatefulWidget {
   const loginScreen({Key? key}) : super(key: key);
@@ -19,7 +20,7 @@ class _loginScreenState extends State<loginScreen> {
                 child: Image.asset("images/loginTopShape.png"),
               ),
               Padding(
-                padding: EdgeInsets.only(top:10.0,bottom:10.0),
+                padding: EdgeInsets.only(top:15.0,bottom:15.0),
                 child: Container(
                   width: MediaQuery.of(context).size.width,
                   child: Center(
@@ -28,33 +29,15 @@ class _loginScreenState extends State<loginScreen> {
                           fontSize: 15,
                           color: Color(0xFF4A4B4D),
                           fontFamily: "Metropolis",
+                          letterSpacing: 5.0,
                       ),
                       ),
                   ),
                 ),
               ),
-              Padding(
-                padding:  EdgeInsets.only(left: 5.0,right: 5.0,bottom: 10.0),
-                child: Container(
-                  width: MediaQuery.of(context).size.width,
-                  child: Center(
 
-                    child: Text("“Başarı, zaman içerisinde çok çalışmaya ve tutkuya "
-                        "bağlıdır. Eğer gerçekten çalışırsanız, uzun bir süre"
-                        "boyunca gerçekten çok çalışırsanız, karşılığını "
-                        "alacaksınız.”",
-                      style:TextStyle(
-                        color: Color(0xFF7C7D7E),
-                        fontSize: 12,
-                        fontFamily: "Metropolis",
-                        fontWeight: FontWeight.w500,
-                    ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
 
-                ),
-              ),
+
               Padding(
                 padding:  EdgeInsets.only(bottom: 15.0),
                 child: Container(
@@ -77,11 +60,14 @@ class _loginScreenState extends State<loginScreen> {
                     ),
                     ),
                     onPressed: (){
-
+                      Navigator.push(context, MaterialPageRoute(builder: (context) =>  mainLoginScreen()));
                     },
                   ),
                 ),
               ),
+
+
+
               Padding(
                 padding: EdgeInsets.only(bottom: 15.0),
                 child: Container(

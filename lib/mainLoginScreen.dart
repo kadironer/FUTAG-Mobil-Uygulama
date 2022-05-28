@@ -17,7 +17,7 @@ class _mainLoginScreenState extends State<mainLoginScreen> {
             Center(
               child: Container(
                 child: Padding(
-                  padding:  EdgeInsets.only(top: 50.0,bottom: 18.0),
+                  padding:  EdgeInsets.only(top: 30.0,bottom: 18.0),
                   child: Text("Giriş Yap",
                     style:TextStyle(
                       fontSize: 30,
@@ -164,10 +164,10 @@ class _mainLoginScreenState extends State<mainLoginScreen> {
 
 
             Padding(
-              padding:  EdgeInsets.only(top: 8.0),
+              padding:  EdgeInsets.only(top: 20.0),
               child: Container(
                 child: TextButton(
-                  child: Text("Hesabınız yok mu ?"" Kayıt Ol",
+                  child: Text("Hesabınız yok mu? Kayıt Ol",
                     style: TextStyle(
                     fontFamily: "Metropolis",
                       fontSize: 14,
