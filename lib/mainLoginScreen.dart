@@ -55,8 +55,11 @@ class _mainLoginScreenState extends State<mainLoginScreen> {
                   keyboardType: TextInputType.emailAddress,
                   decoration: InputDecoration(
                     contentPadding: EdgeInsets.all(20.0),
-                    hintText: "E-mail",
                     fillColor: Color(0xFFF2F2F2),
+                    labelText: "E-mail",
+                    labelStyle: TextStyle(
+                        color: Colors.black
+                    ),
                     enabledBorder: OutlineInputBorder(
                       borderSide: BorderSide(
                         width: 1.0,
@@ -90,8 +93,11 @@ class _mainLoginScreenState extends State<mainLoginScreen> {
                      obscureText: true,
                      decoration: InputDecoration(
                        contentPadding: EdgeInsets.all(20.0),
-                       hintText: "Şifre",
                        fillColor: Color(0xFFF2F2F2),
+                       labelText: "Şifre",
+                       labelStyle: TextStyle(
+                           color: Colors.black
+                       ),
                        enabledBorder: OutlineInputBorder(
 
                          borderSide: BorderSide(
