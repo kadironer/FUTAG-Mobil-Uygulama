@@ -94,8 +94,11 @@ class _registerPageState extends State<registerPage> {
                     keyboardType: TextInputType.emailAddress,
                     decoration: InputDecoration(
                       contentPadding: EdgeInsets.all(20.0),
-                      hintText: "Soyadınız",
                       fillColor: Color(0xFFF2F2F2),
+                      labelText: "Soyadınız",
+                      labelStyle: TextStyle(
+                          color: Colors.black
+                      ),
                       enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(
                           width: 1.0,
@@ -127,8 +130,11 @@ class _registerPageState extends State<registerPage> {
                     keyboardType: TextInputType.emailAddress,
                     decoration: InputDecoration(
                       contentPadding: EdgeInsets.all(20.0),
-                      hintText: "E-mail",
                       fillColor: Color(0xFFF2F2F2),
+                      labelText: "E-mail",
+                      labelStyle: TextStyle(
+                          color: Colors.black
+                      ),
                       enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(
                           width: 1.0,
@@ -161,8 +167,11 @@ class _registerPageState extends State<registerPage> {
                     obscureText: true,
                     decoration: InputDecoration(
                       contentPadding: EdgeInsets.all(20.0),
-                      hintText: "Şifre",
                       fillColor: Color(0xFFF2F2F2),
+                      labelText: "Şifre",
+                      labelStyle: TextStyle(
+                          color: Colors.black
+                      ),
                       enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(
                           width: 1.0,
@@ -195,8 +204,11 @@ class _registerPageState extends State<registerPage> {
                     obscureText: true,
                     decoration: InputDecoration(
                       contentPadding: EdgeInsets.all(20.0),
-                      hintText: "Şifre(Tekrar)",
                       fillColor: Color(0xFFF2F2F2),
+                      labelText: "Şifre(Tekrar)",
+                      labelStyle: TextStyle(
+                          color: Colors.black
+                      ),
                       enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(
                           width: 1.0,
@@ -240,8 +252,11 @@ class _registerPageState extends State<registerPage> {
                     },
                     decoration: InputDecoration(
                       contentPadding: EdgeInsets.all(20.0),
-                      hintText: "Doğum Tarihiniz",
                       fillColor: Color(0xFFF2F2F2),
+                      labelText: "Doğum Tarihiniz",
+                      labelStyle: TextStyle(
+                          color: Colors.black
+                      ),
                       enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(
                           width: 1.0,
