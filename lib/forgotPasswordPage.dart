@@ -17,7 +17,7 @@ class _forgotPasswordPageState extends State<forgotPasswordPage> {
             Center(
               child: Container(
                 child: Padding(
-                  padding: EdgeInsets.only(top: 68.0,bottom: 18.0),
+                  padding: EdgeInsets.only(top: 35.0,bottom: 18.0),
                   child: Text("Parolamı Unuttum",
                     style: TextStyle(
                       fontSize: 30,

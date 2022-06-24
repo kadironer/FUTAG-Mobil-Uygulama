@@ -9,6 +9,10 @@ class registerPage extends StatefulWidget {
 }
 
 class _registerPageState extends State<registerPage> {
+
+  var tfTarih=TextEditingController();
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,7 +22,7 @@ class _registerPageState extends State<registerPage> {
               Center(
                 child: Container(
                   child: Padding(
-                    padding: EdgeInsets.only(top: 68.0,bottom: 18.0),
+                    padding: EdgeInsets.only(top: 35.0,bottom: 18.0),
                     child: Text("Kayıt Ol",
                       style: TextStyle(
                         fontSize: 30,
@@ -53,8 +57,12 @@ class _registerPageState extends State<registerPage> {
                     keyboardType: TextInputType.emailAddress,
                     decoration: InputDecoration(
                       contentPadding: EdgeInsets.all(20.0),
-                      hintText: "Adınız",
+
                       fillColor: Color(0xFFF2F2F2),
+                      labelText: "Adınız",
+                      labelStyle: TextStyle(
+                        color: Colors.black
+                      ),
                       enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(
                           width: 1.0,
@@ -217,7 +225,19 @@ class _registerPageState extends State<registerPage> {
                     style: TextStyle(
                       fontSize: 16,
                     ),
-                    keyboardType: TextInputType.datetime,
+                    controller: tfTarih,
+                    onTap:(){
+                      showDatePicker(
+                        context: context,
+                        initialDate: DateTime.now(),
+                        firstDate: DateTime(1938),
+                        lastDate:DateTime(2050),
+                      ).then((alinanTarih){
+                        setState(() {
+                          tfTarih.text="${alinanTarih?.day}/${alinanTarih?.month}/${alinanTarih?.year}";
+                        });
+                      });
+                    },
                     decoration: InputDecoration(
                       contentPadding: EdgeInsets.all(20.0),
                       hintText: "Doğum Tarihiniz",

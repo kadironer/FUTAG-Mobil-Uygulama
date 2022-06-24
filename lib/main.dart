@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:futag/loginScreen.dart';
-
-
+import 'package:flutter/services.dart';
 
 
 void main() {
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+    statusBarColor: Color(0xFBBD14),
+  ),
+  );
   runApp(const MyApp());
 }
 
@@ -17,6 +20,7 @@ class MyApp extends StatelessWidget {
       title: 'FÜTAG',
       debugShowCheckedModeBanner: false,
       home:  loginScreen(),
+
     );
   }
 }
