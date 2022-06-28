@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:futag/loginScreen.dart';
-import 'package:flutter/services.dart';
 
+import 'package:flutter/services.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:futag/splashScreen.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
@@ -17,9 +18,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      localizationsDelegates: [
+        GlobalMaterialLocalizations.delegate
+      ],
+      supportedLocales: [
+        const Locale('tr'),
+        const Locale('en')
+      ],
       title: 'FÜTAG',
       debugShowCheckedModeBanner: false,
-      home:  loginScreen(),
+      home:  splashScreen(),
 
     );
   }

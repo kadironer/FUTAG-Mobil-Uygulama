@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:futag/mainLoginScreen.dart';
 
+
 class registerPage extends StatefulWidget {
   const registerPage({Key? key}) : super(key: key);
 
@@ -240,6 +241,7 @@ class _registerPageState extends State<registerPage> {
                     controller: tfTarih,
                     onTap:(){
                       showDatePicker(
+                        locale: Locale("tr","TR"),
                         context: context,
                         initialDate: DateTime.now(),
                         firstDate: DateTime(1938),
